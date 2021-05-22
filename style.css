@@ -1,0 +1,40 @@
+/* 
+1.Posicionamiento 
+2. Modelo de caja(Box model) Margin padding
+3. Tipografía
+4. Visuales
+5. Miselanos u otros
+
+*/
+:root{
+    /* Colores fuentes */
+    --bitcoin-orange: #f7931a;
+    --soft-orange: #ffe9d5;
+    --second-blue:#1a9af7;
+    --soft-blue: #E7F5FF;
+    --warm-black: #201e1c;
+    --black: #282623;
+    --off-white:#faf8f7;
+    --just-white:#fff;
+
+}
+
+/* *{
+    box-sizing: 65.2%;
+    font-family: 'DM Sans', sans-serif;
+} */
+
+html{
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+header{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+}
