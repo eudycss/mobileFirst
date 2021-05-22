@@ -38,3 +38,20 @@ header{
     height: 334px;
     text-align: center;
 }
+header img{
+    width: 150px;
+    height: 24px;
+    margin-top: 60px;
+    align-self: center;
+}
+
+.header--title-container{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    /* una vez llega a los 900px deja de crecer */
+    height: 218px;
+    margin-top: 50px;
+    text-align: center;
+    align-self: center;
+}
