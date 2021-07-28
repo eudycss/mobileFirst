@@ -332,3 +332,46 @@ color: var(--warm-black);
     font-weight: 300;
     color: var(--warm-black);
   }
+
+  .main-product-detail{
+      position: relative;
+      width: 100%;/* para que abarqye el 100% ese contendedor */
+      min-width: 320px;
+      height: auto; /* el contenido asque porsi solo el alto  */
+      padding: 20px 10px;
+      background-color: var(--warm-black);
+  }
+  .product-detail--batata-logo{
+      position: absolute;/* absoluto busca un position relative y lo toma de ahi, y ahi que asegurarnos quien es el padre directo */
+      width: 40px;
+      height: 25px;
+      top: -10px;
+      left: calc(50% - 20px); /* el 20 es para que no esteen el centro  */
+      background-image: url('./assets/icons/batata.svg');
+
+  }
+
+  .product-detail--title{
+      width: 90%;
+      min-width: 288px;
+      height: auto;
+      margin: 0 auto;
+      margin-top: 50px;
+      text-align: center;
+  }
+
+  .product-detail--title h2{
+      margin-bottom: 20px;
+      font-size: 2.4rem;
+      font-weight: bold;
+      line-height: 2.6rem;
+      color: var(--just-white);
+  }
+
+  .product-detail--title p{
+      margin-bottom: 20px;
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 1.8rem;
+      color: #808080 ;
+  }
