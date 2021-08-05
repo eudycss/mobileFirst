@@ -20,10 +20,12 @@
 
 }
 
-/* *{
-    box-sizing: 65.2%;
-    font-family: 'DM Sans', sans-serif;
-} */
+*{
+    box-sizing: border-box;
+    /* font-family: 'DM Sans', sans-serif; */
+    margin: 0;
+    padding: 0;
+} 
 
 html{
     font-size: 62.5%;
@@ -38,10 +40,10 @@ header{
     min-width: 320px;   
     height: 334px;
     text-align: center; 
-    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%); 
+    background: linear-gradient(208.83deg, #201E1C 16.69%, #F7931A 100%); 
 }
 header img{
-    width: 150px;
+    width: 151px;
     height: 24px;
     margin-top: 60px;
     align-self: center;
@@ -84,8 +86,8 @@ header img{
     top:270px;
     
     display: block;
-    margin-top: 30px;
-    padding-top: 20px;
+    margin-top: 35px;
+    padding: 15px;
     
     width: 229px;
     height: 48px;
@@ -93,19 +95,22 @@ header img{
     /* Sombra */
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16); /* sombras */
     border: none;/* EN caso de que exitsta un borde definido, lo quitamis y ponemos uno personalizado */
-    border-radius: 5px;
+    border-radius: 4px;
     font-size: 1.4rem;
     font-weight: bold;
     text-decoration: none;
     color:var(--black);
 
 }
-.header--button span{ /* span para que se pueda ver */
+.header--title-container .header--button span{ /* span para que se pueda ver */
     display: inline-block /* para que me de lo mejor de inline yu block */;
     width: 13px;
     height: 8px;
     margin-left: 10px;
     background-image: url("./assets/icons/down-arrow.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 main{
     width: 100%;
@@ -339,11 +344,11 @@ color: var(--warm-black);
       min-width: 320px;
       height: auto; /* el contenido asque porsi solo el alto  */
       padding: 20px 10px;
-      background-color: var(--warm-black);
+      background-color:var(--black);
   }
   .product-detail--batata-logo{
       position: absolute;/* absoluto busca un position relative y lo toma de ahi, y ahi que asegurarnos quien es el padre directo */
-      width: 40px;
+      width: 40.57px;
       height: 25px;
       top: -10px;
       left: calc(50% - 20px); /* el 20 es para que no esteen el centro  */
@@ -375,3 +380,210 @@ color: var(--warm-black);
       line-height: 1.8rem;
       color: #808080 ;
   }
+
+  .product-detail--card{
+      width: 90%;
+      min-width: 288px;
+      max-width: 400px; /* que creca de mobile a una computadora  */
+      height: 152px;
+      margin: 15px auto; /* para que se autocentre */
+      padding: 15px;
+      background-color: var(--black);
+      border-radius: 4px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+
+
+  }
+
+  /* agregar el icono */
+  .product-detail--card .clock{
+      display: inline-block;
+      width: 20px;
+      height: 29px;
+      margin: 0 auto;
+     margin-bottom: 10px;
+      background-image: url('./assets/icons/clock.svg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+
+  .product-detail--card .eye{
+    display: inline-block;
+    width: 20px;
+    height: 19px;
+    margin: 0 auto;
+   margin-bottom: 10px;
+    background-image: url('./assets/icons/eye.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product-detail--card .dollar{
+    display: inline-block;
+    width: 20px;
+    height: 19px;
+    margin: 0 auto;
+   margin-bottom: 10px;
+    background-image: url('./assets/icons/dollar-sign.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product-detail--card .check{
+    display: inline-block;
+    width: 20px;
+    height: 19px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background-image: url('./assets/icons/check-circle.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+  .product--card-title{
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+      font-weight: bold; /* para que sea como un encabezaod */
+      line-height: 1.8rem;
+      color:var(--just-white);
+  }
+  
+  .product--card-body{
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 1.8rem;
+      color: #808080;
+}
+
+.bitcoin-img-container{
+
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url('./assets/img/bitcoinbaby2x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; /* para que no repita la imagen */
+    text-align: center;
+}
+
+.bitcoin-img-container h2{
+    padding-top:  60px;
+    font-size: 2.4rem; /* 24px */
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.main-plans-container{
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+
+}
+.plans--title{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+  margin-top: 50px;
+
+}
+.plans--title h2{
+ padding-top: 50px;
+ font-size: 2.4rem;
+ font-weight: bold;
+ line-height: 2.6rem;
+ color: var(--black)
+}
+
+.plans--title p{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+    
+}
+.plans-container--card {
+    position: relative; /* para hacer el efecto flotante */
+    width: 70%;
+   
+    min-width: 230px; /* cuando la pantalla llegue a su tamaño minimo, necesitamos que esta parte se vea mas pequeo aun */
+    max-width: 300px; /* no se hace mas grande de 320px */
+    height: 250px;
+    margin: 50px 30px 0;
+    padding: 0 15px; /* el contendor empieze a a centrar su contenido */
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+
+}
+.recomendado {
+    position: absolute;/* su padre tiene relative */
+    width: 120px;
+    height: 31px;
+    padding: 6px;
+    top: -15px;/*  que salga directamente de su padre */
+    left: calc(50% - 60px);
+    font-size: 1.2rem;
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+    color: var(--just-white);/* color de la fuente */
+    
+}
+.plan-card--title{
+    padding-top: 30px; /* para darle un espacio */
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: black;
+}
+
+.plan-card--price{
+padding: 5px 0;
+font-size: 5.2rem;
+font-weight: bold;
+line-height: 5.3rem;
+color: black;
+}
+
+.plan-card--price span {
+    
+    font-size: 1.2rem;
+    font-weight: 300;
+    /* para subir el icono de dolar */
+    vertical-align: text-top;
+}
+.plan-card--saving{
+    font-size: 1.2rem;
+    color: #757575;
+}
+
+.plan-card--ca{
+
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;/* separar el boton de los textos */
+    background-color: #faf8f7;
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+
+.plan-card--ca span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('./assets/icons/orange-right-arrow.svg');
+    vertical-align: text-bottom;
+}
