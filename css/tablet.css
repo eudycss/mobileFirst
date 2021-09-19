@@ -1,0 +1,18 @@
+
+main-tables-container {
+    display: flex;
+    width: 930px;
+    margin: 0 auto;
+}
+.product-cards--container {
+    /* Para evitar un overflow y se vaya acomodando */
+    display: flex; 
+    flex-wrap: wrap;
+    width: 930px;
+    margin: 0 auto; /* no quiero que creza sino que se se acomode */
+}
+.plans-container--slider{
+    /* Nos centra autamaticamnete cuando inicie los 930px */
+    justify-content: center;
+}
+
